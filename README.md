@@ -72,7 +72,7 @@ example images:
 
 ### Run your pipeline on a video stream (start with the test_video.mp4 and later implement on full project_video.mp4)  
 First, I'll show the video result with my pipeline.Here
-is the link to my video result. 
+is the link to [my video result](https://github.com/RoybinGuo/Vehicle-Detection-and-Tracking/tree/master/output_videos). 
 
 
 ### create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles.
@@ -93,8 +93,13 @@ And the output looks like this:
 ### challenge: combine laneline algorithms and vehicle detection alorgithm on the video
 
 ## Discussion
-
+ 
 ### problems 
-
-### 
+I found it was difficult to detect the cars in the video streams.It was very unstable to detect cars in my output result.The main reason is that the car is coming from near to far  in the continuous frames,so the paramters in sliding window method is not suitable for all the frames and is very time consuming.Secondly,
+The output bbox from the hot maps is not right surrounding 
+the car,sometimes smaller or larger than the original car size.
+#### Thinking
+The solution for the false detection may be training a 
+more robust classifier or finding a new detect method of find
+the fit bbox in my view.I will do some research and figure out an better method for the project.
 
